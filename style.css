@@ -113,6 +113,7 @@ a,
     height: 200px;
     line-height: 200px;
     text-align: center;
+    flex: 2 1 auto;
 }
 
 
@@ -259,6 +260,10 @@ Main Container has 3 sections
     /* Your CSS rules for smaller screens */
     .information {
       flex-direction: column; /*  changing layout for smaller screens */
+    }
+
+    .header_part2 {
+        flex-direction: column;
     }
 
 }
