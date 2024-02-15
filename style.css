@@ -74,7 +74,7 @@ a,
 
 .header_part2 { /* Aligns Website Info with signup link and header image inside Header part 2 using flex property horizontally*/
     display: flex;
-    gap: 100px;   
+    gap: 50px;   
     margin-bottom: 50px;
 }
 
@@ -120,15 +120,126 @@ a,
 
 
 
-
-
-
-
+/* Style Main Container: 
+Main Container has 3 sections
+--------------------------------------------------------------------------------*/
 .main {
     flex: 1;
+   
+}
+
+/* Style Section 1 */
+.section_1 {
+    padding: 40px 150px;
+    text-align: center;
+}
+
+.information_header {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937; 
+} 
+
+
+.information {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.subtext,
+.illustration {
+    width: 150px;
 }
 
 
+.illustration {
+    border: 3px solid #3882F6;
+    border-radius: 20px;
+    height: 150px;
+}
+
+/* End of Section 1  */
+
+
+.section_2 {
+    background-color: #E5E7EB;
+  
+}
+
+
+.testimonial {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 350px;
+}
+
+.testimonial .author {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    align-self: flex-end;
+}
+
+/* End of Section 2*/
+
+/* Section 3 */
+
+.section_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 150px;
+}
+
+.cta_container {
+    background-color: #3882F6;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin: 0;
+    padding: 40px;
+}
+
+.cta_text {
+    font-size: 18px;
+}
+
+.cta_subtext {
+    color: #E5E7Eb;
+    font-weight: 400;
+}
+
+/* Remove padding and margin from the h2 and p elements */
+.cta_text, .cta_subtext {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.cta_button {
+    border: 2px solid white; /* white border */
+    border-radius: 6px;
+    padding: 5px 30px;
+    background-color: transparent; /* Transparent background */
+    color: white; /* Black text color */
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* End of Section 3 */
+
+
+/* ------------------------------- End of Main Container -------------------------------- */
 
 /* ------------------------ Style Footer------------------------- */
 .footer {
@@ -143,3 +254,11 @@ a,
 
 /* -------------------------End of Footer styling --------------------- */
 
+/* Styles for viewport widths up to 768px */
+@media (max-width: 768px) {
+    /* Your CSS rules for smaller screens */
+    .information {
+      flex-direction: column; /*  changing layout for smaller screens */
+    }
+
+}
