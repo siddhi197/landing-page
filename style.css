@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {    /* Utilizing a body as a flex container with a column direction to seamlessly align the content vertically.*/
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Header and Footer Background color */
+.header,
+.footer {
+    background-color: #1F2937;
+}
+/* ------------------------------------ */
+
+/* Styling Header :
+Header has 2 parts 
+Part 1. Logo and links
+Part 2. Website Info with signup link and header image
+*/
+
+.header {         /* Aligns two parts of the headers vertically */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 150px;
+    gap: 100px;
+}
+
+/* ----------------------Styling Header part 1 ----------------------------------- */
+
+.header_part1 {               /* Further aligns logo and links inside Header part 1 using flex property horizontally*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {                       /* Styles Header Logo */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styles header links */
+ul {                         /* Aligns list items horizontally */
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+/* -----------------------------End of Header 1 styling ---------------------------*/ 
+
+/* Grouped header 1 and header 2 selectors and element that share common properties */
+.logo,
+.header_text {                           
+    color: #F9FAF8;
+}
+
+a,
+.secondary_text {
+    font-size: 18px;
+    color: #E5E7Eb;
+}
+/*-------------------End of Grouped Header 1 and Header 2 selectors/elements  --------------------------- */
+
+
+/* ----------------------Styling Header part 2 ----------------------------------- */
+
+.header_part2 { /* Aligns Website Info with signup link and header image inside Header part 2 using flex property horizontally*/
+    display: flex;
+    gap: 100px;   
+    margin-bottom: 50px;
+}
+
+.header_content {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.header_text {
+    font-size: 48px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    width: 350px;
+}
+
+.secondary_text {
+    width: 450px;
+}
+
+.signup_button {
+    background-color: #3882F6;
+    color: white;
+    padding: 8px 24px;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.header_image {
+    color: #E5E7Eb;
+    background-color: #63676c;
+    flex: 1;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+
+/* -----------------------------End of Header 2 styling ---------------------------*/ 
+
+
+
+
+
+
+
+.main {
+    flex: 1;
+}
+
+
+
+/* ------------------------ Style Footer------------------------- */
+.footer {
+    height: 100px;
+    color: #f8e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    word-spacing: 2px;
+}
+
+/* -------------------------End of Footer styling --------------------- */
+
