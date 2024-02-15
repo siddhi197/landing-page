@@ -54,6 +54,10 @@ ul {                         /* Aligns list items horizontally */
     text-decoration: none;
   }
 
+  a:hover {
+    color: #63676c;
+  }
+
 /* -----------------------------End of Header 1 styling ---------------------------*/ 
 
 /* Grouped header 1 and header 2 selectors and element that share common properties */
@@ -110,7 +114,7 @@ a,
     color: #E5E7Eb;
     background-color: #63676c;
     flex: 1;
-    height: 200px;
+    height: 400px;
     line-height: 200px;
     text-align: center;
     flex: 2 1 auto;
